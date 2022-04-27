@@ -4,7 +4,7 @@ build_deb:
 clean:
 	rm -rf deb_dist/
 	rm -rf dist/
-	rm -f jl-slurm-*.tar.gz
+	rm -f code-slurm-*.tar.gz
 	rm -rf *.egg-info/
 	rm -f *.out
 build_wheel:

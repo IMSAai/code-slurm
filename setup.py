@@ -12,23 +12,23 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "jl-slurm",
-    version = "2.6.0",
+    name = "code-slurm",
+    version = "1.0.0",
     author = "EpochML",
     author_email = "webmaster@epochml.org",
     maintainer = "EpochML",
     maintainer_email = "webmaster@epochml.org",
-    description = ("Scheduler for Jupyter Notebook on SLURM clusters where compute nodes are hidden behind head/login nodes"),
+    description = ("Scheduler for VS Code instances on SLURM clusters where compute nodes are hidden behind head/login nodes"),
     license = "BSD",
     platforms=['Linux'],
     project_urls={
-        "Bug Tracker": "https://github.com/epochml/jl-slurm/issues",
-        "Documentation": "https://github.com/epochml/jl-slurm/blob/master/README.md",
-        "Source Code": "https://github.com/epochml/jl-slurm/",
+        "Bug Tracker": "https://github.com/epochml/code-slurm/issues",
+        "Documentation": "https://github.com/epochml/code-slurm/blob/master/README.md",
+        "Source Code": "https://github.com/epochml/code-slurm/",
     },
-    keywords = "slurm python development jupyterlab",
-    url = "https://github.com/epochml/jl-slurm",
-    scripts=['jl-slurm'],
+    keywords = "slurm python development code vscode",
+    url = "https://github.com/epochml/code-slurm",
+    scripts=['code-slurm'],
     long_description=read('README.md'),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
