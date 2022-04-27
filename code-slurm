@@ -88,7 +88,7 @@ def create_sbatch_header(running_time, partition, python2, email, debug, condaen
         header += "\n#SBATCH --mail-user=" + email
 
     header += "\nunset XDG_RUNTIME_DIR"
-    header += "\n/PASSWORD=\"{}\" /home/tools/code-server/bin/code-server --bind-addr 0.0.0.0:{}".format(password, port)
+    header += "\nPASSWORD=\"{}\" /home/tools/code-server/bin/code-server --bind-addr 0.0.0.0:{}".format(password, port)
 
     return header
 
